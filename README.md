@@ -1,3 +1,7 @@
+## Screenshots
+![to-do 1](https://github.com/taha-elmasir/To-Do-List/assets/99720427/9df5c262-83a1-440f-a95d-778aee8ef5ca)
+![to-do 2](https://github.com/taha-elmasir/To-Do-List/assets/99720427/0c89dad1-45ed-45e7-b08b-e69f07becef1)
+
 # ToDo
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.1.
