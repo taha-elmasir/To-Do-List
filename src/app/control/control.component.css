@@ -1,0 +1,53 @@
+.control input {
+    padding: 12px;
+    display: block;
+    border: 1px solid #000;
+    width: 300px;
+    font-size: 16px;
+    font-family: inherit;
+    border-radius: 4px;
+  }
+  
+  input:focus {
+    border: 1px solid #1864ab;
+  }
+  
+  .btn-add {
+    background-color: #1864ab;
+    color: #fff;
+    transition: 0.3s;
+  }
+  
+  .btn-add:hover {
+    background-color: #3876b1;
+  }
+  
+  /* Status */
+  
+  .status {
+    font-family: inherit;
+    font-size: inherit;
+    background-color: #212529;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .status option {
+    font-size: 14px;
+  }
+  
+  @media (max-width: 600px) {
+    .control {
+      flex-direction: column !important;
+    }
+    .control input {
+      width: 100%;
+    }
+    .status, .btn-add {
+      width: 50%;
+      margin: auto;
+    }
+  }
+  

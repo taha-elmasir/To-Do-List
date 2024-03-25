@@ -1,0 +1,19 @@
+<div class="todo-list flex">
+    <div class="sort">
+      <button class="btn btn-sort" (click)="hideSort = !hideSort">
+        Filter <span>&rarr;</span>
+      </button>
+      <div class="dropdown-content" [ngClass]="{ hidden: hideSort }">
+        <a (click)="onSort('all')">All</a>
+        <a (click)="onSort('completed')">Completed</a>
+        <a (click)="onSort('ongoing')">Ongoing</a>
+      </div>
+    </div>
+
+    <app-todo-item
+      *ngFor="let todo of todoList; let i = index"
+      [id]="i"
+      [todoInfo]="todo"
+      [isChecked]="todo.status === 'completed' ? true : false"
+    ></app-todo-item>
+  </div>

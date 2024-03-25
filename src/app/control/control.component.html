@@ -1,0 +1,18 @@
+<div class="control flex sm-gap justify">
+    <input type="text" placeholder="To-Do Name" [(ngModel)]="todoTitle" />
+    <div class="flex sm-gap">
+      <select class="status" (change)="status = $event.target.value">
+        <option selected disabled>Status</option>
+        <option value="completed">Completed</option>
+        <option value="ongoing">Ongoing</option>
+      </select>
+      <button
+        type="button"
+        class="btn btn-add"
+        (click)="onAddTodo(todoTitle, status)"
+      >
+        ADD
+      </button>
+    </div>
+  </div>
+  

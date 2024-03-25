@@ -1,0 +1,88 @@
+.todo-item {
+    padding: 10px 20px;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 4px;
+    border-left: 1px solid gray;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.09);
+  
+    transition: 0.3s;
+  }
+  
+  .todo-item:hover {
+    box-shadow: 8px 16px 32px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .todo-item.space {
+    justify-content: space-between;
+  }
+  
+  .checked {
+    text-decoration: line-through;
+  }
+  
+  .title {
+    max-width: 200px;
+    text-wrap: nowrap;
+    overflow: auto;
+  }
+  
+  .btn-delete {
+    background-color: #722c2c;
+    color: #fff;
+  }
+  
+  .update-control {
+    font-size: 14px;
+    justify-content: center;
+    width: 40%;
+    margin: 32px auto 0;
+    padding: 10px 0;
+    border-radius: 4px;
+    border-left: 1px solid gray;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.09);
+  }
+  
+  .update-control input {
+    padding: 6px;
+    display: block;
+    font-family: inherit;
+    border-radius: 2px;
+    border: 1px solid#000;
+    font-size: inherit;
+  }
+  
+  .btn-update {
+    background-color: #1864ab;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: inherit;
+  }
+  
+  @media (max-width: 850px) {
+    .todo-item {
+      width: 70%;
+    }
+    .update-control {
+      width: 60%;
+    }
+  }
+  
+  @media (max-width: 680px) {
+    .todo-item {
+      width: 80%;
+    }
+    .update-control {
+      width: 70%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .todo-item {
+      width: 100%;
+    }
+    .update-control {
+      width: 90%;
+    }
+  }
+  

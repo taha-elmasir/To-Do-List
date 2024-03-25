@@ -1,0 +1,24 @@
+<div class="todo-item flex sm-gap alignY space">
+    <div class="flex sm-gap">
+      <input
+        type="checkbox"
+        (change)="onUpdateStatus($event)"
+        [checked]="isChecked"
+      />
+      <p class="title" [ngClass]="{ checked: isChecked }">{{ todo.title }}</p>
+    </div>
+    <div class="flex sm-gap">
+      <button class="btn" (click)="isUpdating = !isUpdating">Edit</button>
+      <button class="btn btn-delete" (click)="onDeleteTodo()">Delete</button>
+    </div>
+  </div>
+  
+  <div
+    class="update-control flex sm-gap alignY"
+    [ngClass]="{ hidden: !isUpdating }"
+  >
+    <label for="title">New Title:</label>
+    <input [(ngModel)]="updatedTitle" type="text" name="title" />
+    <button class="btn btn-update" (click)="onUpdateTodo()">Submit</button>
+  </div>
+  
